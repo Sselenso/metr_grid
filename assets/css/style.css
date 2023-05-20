@@ -237,10 +237,60 @@ img {
 
 .burger__open.active {
   display: block;
-  z-index: 3;
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color5);
+  z-index: 9999;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  overflow: hidden;
 }
-
+.burger__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-top: 5rem;
+  padding-left: 1.875rem;
+  width: 17.125rem;
+  height: 100%;
+  background-color: var(--color1);
+}
+.burger__logo {
+  margin-bottom: 50px;
+}
+.burger__exit-icon {
+  position: absolute;
+  width: 20px;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+.burger__item {
+  margin-bottom: 20px;
+}
+.burger__item:last-child {
+  margin-bottom: 90px;
+}
+.burger__link {
+  color: var(--color4);
+  font-size: 1.5625rem;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+.burger__contact-title {
+  font-size: 1rem;
+  line-height: 1.375;
+  opacity: 0.5;
+}
+.burger__link-contact {
+  font-size: 1.25rem;
+  line-height: 2.3;
+  color: var(--color4);
+}
 .section__main {
   margin-top: 2.3125em;
   margin-bottom: 9.375em;

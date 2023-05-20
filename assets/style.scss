@@ -16,6 +16,7 @@ body {
 	overflow: hidden;
 }
 
+
 img {
 	width: 100%;
 }
@@ -129,11 +130,83 @@ img {
 }
 
 
-.burger__open.active {
-	display: block;
-	z-index: 3;
-	position: absolute;
+.burger {
+	&__open.active {
+		display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color5);
+	z-index: 9999;
+	transition: all 0.2s ease;
+	overflow: hidden;
+	}
+	&__content {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding-top: rem(80);
+    padding-left: rem(30);
+    width: rem(274);
+		height: 100%;
+		background-color: var(--color1);    
+	}
+	&__logo {
+		margin-bottom: 50px;
+	}
+	&__exit-icon{
+		position: absolute;
+		width: 20px;
+		top: 30px;
+		right: 30px;
+		cursor: pointer;
+	}
+	&__nav {
+	}
+	&__list {
+		
+	}
+	&__item {
+		margin-bottom: 20px;
+	}
+	&__item:last-child{
+		margin-bottom: 90px;
+	}
+	&__link {
+		color: var(--color4);
+    font-size: rem(25);
+    line-height: 1.36;
+		text-transform: uppercase;
+	}
+	&__contact {
+	}
+	&__contact-title {
+		font-size: rem(16);
+    line-height: 1.375;
+    opacity: 0.5;
+	}
+	&__link-contact {
+		font-size: rem(20);
+    line-height: 2.3;
+		color: var(--color4);
+	}
+	&__contact-phone {
+		
+	}
+	&__contact-mail {
+	}
 }
+
+.header {
+	&__logo {
+	}
+}
+
+
+
+
 
 .section {
 	&__main {
