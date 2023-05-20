@@ -2,6 +2,7 @@ const burgerBtn = document.querySelector('.header__burger');
 const burgerMenu = document.querySelector('.burger__open');
 const body = document.querySelector('body');
 const exitIcon = document.querySelector('.burger__exit-icon');
+const burgerLinks = document.querySelectorAll('.burger__link');
 
 function closeBurger() {
   burgerBtn.classList.remove('active');
@@ -19,3 +20,14 @@ exitIcon.addEventListener('click', function() {
   closeBurger();
 });
 
+burgerMenu.addEventListener('click', function(event) {
+  if (event.target.classList.contains('active')) {
+    closeBurger();
+  }
+});
+
+burgerLinks.forEach(function(link) {
+  link.addEventListener('click', function() {
+    closeBurger();
+  });
+});
