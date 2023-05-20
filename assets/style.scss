@@ -130,10 +130,10 @@ img {
 //burger
 .burger {
 	&__open{
-		//display: none;
-		position: absolute;
-		top: 0;
-	right: -274px;
+	display: none;
+	// 	position: absolute;
+	// 	top: 0;
+	// right: -274px;
 	}
 	&__open.active {
 	display: block;

@@ -232,9 +232,7 @@ img {
 }
 
 .burger__open {
-  position: absolute;
-  top: 0;
-  right: -274px;
+  display: none;
 }
 .burger__open.active {
   display: block;
