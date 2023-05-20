@@ -789,6 +789,24 @@ img {
     padding: 0 3.125rem;
   }
 }
+@media (max-width: 30em) {
+  .form__container {
+    width: 90%;
+  }
+  .form__title {
+    font-size: 1.5625rem;
+    margin-bottom: 0.6875rem;
+  }
+  .form__descr {
+    font-size: 0.875rem;
+    line-height: 1.35;
+    margin-bottom: 4.375rem;
+  }
+  .form__container input[type=text], .form__container input[type=email], .form__container input[type=tel], .form__container textarea {
+    max-width: 90%;
+    font-size: 1.125rem;
+  }
+}
 @media (max-width: 20em) {
   .section__main {
     margin-bottom: 5em;
