@@ -739,6 +739,12 @@ img {
   }
 }
 @media (max-width: em(480)) {
+	.service{
+		&__button{
+			margin-top: rem(60);
+    	margin-bottom: rem(80);
+		}
+	}
   .form {			
 		&__container {			
 			width: 90%;			
@@ -757,30 +763,9 @@ img {
 		&__container input[type="tel"],
 		&__container textarea {			
 			max-width: 90%;
-			font-size: rem(18);
-			
+			font-size: rem(18);			
 		}
-		&__container input[type="text"]:focus,
-		&__container input[type="email"]:focus,
-		&__container input[type="tel"]:focus,
-		&__container textarea:focus {
-			
-		}
-		&__button {
-			
-		}
-		&__container .btn:hover {
-			
-		}
-		&__close-icon {
-			
-		}
-		&__btn {
 		
-		}
-		&__btn:hover {
-			
-		}
 	}
 }
 
