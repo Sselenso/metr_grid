@@ -233,6 +233,8 @@ img {
 
 .burger__open {
   display: none;
+  opacity: 1;
+  visibility: visible;
 }
 .burger__open.active {
   display: block;
@@ -243,9 +245,6 @@ img {
   height: 100%;
   background-color: var(--color5);
   z-index: 9999;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
   overflow: hidden;
 }
 .burger__content {
@@ -257,6 +256,7 @@ img {
   width: 17.125rem;
   height: 100%;
   background-color: var(--color1);
+  overflow: hidden;
 }
 .burger__logo {
   margin-bottom: 50px;

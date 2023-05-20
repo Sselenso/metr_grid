@@ -18,3 +18,4 @@ burgerBtn.addEventListener('click', function() {
 exitIcon.addEventListener('click', function() {
   closeBurger();
 });
+

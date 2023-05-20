@@ -1,3 +1,6 @@
+const closeIcon = document.querySelector('.close-icon');
+closeIcon.addEventListener('click', closeForm);
+
 function openForm() {
   document.body.classList.add("body-fixed");
   document.getElementById("myForm").style.display = "block";
@@ -8,7 +11,6 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 
-const closeIcon = document.querySelector('.close-icon');
-closeIcon.addEventListener('click', closeForm);
+
 
 

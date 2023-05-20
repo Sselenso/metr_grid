@@ -133,7 +133,9 @@ img {
 	display: none;
 	// 	position: absolute;
 	// 	top: 0;
-	// right: -274px;
+	// right: -274px;	
+		opacity: 1;
+		visibility: visible;	
 	}
 	&__open.active {
 	display: block;
@@ -143,10 +145,10 @@ img {
 	width: 100%;
 	height: 100%;
 	background-color: var(--color5);
-	z-index: 9999;
-	transition: all 0.2s ease;
+	z-index: 9999;	
 	overflow: hidden;
 	}
+
 	&__content {
 		position: absolute;
 		top: 0;
@@ -155,8 +157,10 @@ img {
     padding-left: rem(30);
     width: rem(274);
 		height: 100%;
-		background-color: var(--color1);    
+		background-color: var(--color1);  
+		overflow: hidden;		  
 	}
+	
 	&__logo {
 		margin-bottom: 50px;
 	}
