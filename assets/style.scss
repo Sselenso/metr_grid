@@ -98,20 +98,7 @@ img {
   }
   &__burger {
     display: none;
-  }
-	&__burger.active {
-		position: absolute;
-		z-index: 999;		
-    cursor: pointer;		
-	}
-	&__burger.active::before{
-		top: 4px;
-		right: -565px;
-	}
-	&__burger.active::after{
-		top: -1px;
-		right: -565px;
-	}
+  }	
   &__navigation {
     display: flex;
     align-items: center;
@@ -733,15 +720,7 @@ img {
         bottom: 0;
         width: rem(30);
         margin-top: 6px;
-      }
-		&.active::before{
-			width: 30px;
-			transform: rotate(45deg);			
-		}
-		&.active::after{
-			width: 30px;
-			transform: rotate(-45deg);			
-		}
+      }	
     }
   }
   .gallery {
