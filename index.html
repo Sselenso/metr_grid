@@ -16,7 +16,8 @@
 				<div class="header__content content">
 					<a href="index.html">
 						<img class="header__logo" src="./assets/img/metrica_logo.svg" alt="логотип Metrica" />
-					</a>					
+					</a>		
+							
 					<div class="header__burger">
 						<span></span>
 					</div>
@@ -81,6 +82,13 @@
 						<h1 class="main__title">
 							Современные и&nbsp;стильные интерьеры&nbsp;для&nbsp;комфортной жизни
 						</h1>
+						<div class="theme">
+							<img class="theme__icon-left" src="./assets/img/sun.svg" alt="">
+							<div class="theme-toggle">
+								<div class="slider"></div>
+								<img class="theme__icon-right" src="./assets/img/moon.svg" alt="">
+							</div>
+						</div>	
 						<div class="main__img-wrapper">
 							<picture>
 								<source media="(min-width:480px)" srcset="assets/img/main.webp, assets/img/main.jpg">
@@ -265,9 +273,11 @@
 			</section>
 
 			<section class="section__gallery" id="gallery">
-				<div class="gallery__title-wrapper">
-					<div class="gallery__contrainer">
-						<p class="gallery__title title">Галерея проектов</p>
+				<div class="gallery__wrap">
+					<div class="gallery__title-wrapper">
+						<div class="gallery__contrainer">
+							<p class="gallery__title title">Галерея проектов</p>
+						</div>
 					</div>
 				</div>
 				<div class="gallery__slides">
@@ -359,7 +369,7 @@
 		</footer>
 	</div>
 
-	
+	<script src="./assets/js/toggletheme.js"></script>
 	<script src="./assets/js/form.js"></script>
 	<script src="./assets/js/gallery.js"></script>
 	<script src="./assets/js/burger.js"></script>
