@@ -1,0 +1,115 @@
+.contacts {
+  padding-top: 140px;
+  padding-bottom: 150px;
+}
+.contacts__title {
+  margin-top: 10px;
+  margin-bottom: 74px;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+.contacts__list {
+  display: flex;
+  gap: 97px;
+}
+.contacts__number {
+  margin-bottom: 30px;
+  color: #121212;
+  position: relative;
+}
+
+.contacts__number:hover {
+  opacity: 0.5;
+  border-bottom: 2px solid black;
+}
+
+.contacts__email::before,
+.contacts__number::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.contacts__number:before {
+  background-image: url(../resources/icon_phone.svg);
+  top: -39px;
+  left: -5px;
+}
+.contacts__email {
+  color: #121212;
+}
+
+.contacts__email:hover {
+  opacity: 0.5;
+  border-bottom: 2px solid black;
+}
+.contacts__email:before {
+  background-image: url(../resources/icon_mail.svg);
+  margin-top: -50px;
+  color: rgba(18, 18, 18, 1);
+}
+.contacts__number,
+.contacts__email {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+/* Адаптив для блока контакты */
+@media (max-width: 1199px) {
+  .contacts {
+    padding-top: 110px;
+    padding-bottom: 90px;
+  }
+  .contacts__list {
+    gap: 114px;
+  }
+  .contacts__number:before {
+    top: -49px;
+  }
+  .contacts__number,
+  .contacts__email {
+    font-size: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts {
+    padding-top: 68px;
+    padding-bottom: 79px;
+  }
+  .contacts__title {
+    margin-bottom: 58px;
+    font-size: 14px;
+  }
+  .contacts__list {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 58px;
+  }
+  .contacts__email {
+    color: #121212;
+    border: none;
+  }
+  .contacts__number,
+  .contacts__email {
+    font-size: 35px;
+    line-height: 46px;
+  }
+  .contacts__email::before,
+  .contacts__number::before {
+    width: 18px;
+    height: 18px;
+  }
+  .contacts__number::before {
+    top: -38px;
+    background-image: url(../resources/icon_phone_mobile.svg);
+  }
+  .contacts__email::before {
+    margin-top: -39px;
+    background-image: url(../resources/icon_mail_mobile.svg);
+  }
+}
