@@ -257,6 +257,7 @@ img {
 }
 
 .theme {
+  display:none;
   position: absolute;
   border: 1px solid var(--color2);
   border-radius: 30px;
